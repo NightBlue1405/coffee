@@ -1,0 +1,29 @@
+@import "tailwindcss";
+
+@theme {
+  --font-headline: "Noto Serif", serif;
+  --font-body: "Manrope", sans-serif;
+  --font-label: "Manrope", sans-serif;
+
+  --color-primary: #6c5842;
+  --color-on-surface: #1b1c1a;
+  --color-surface: #fbf9f5;
+  --color-surface-container-low: #f5f3ef;
+  --color-surface-container-high: #eae8e4;
+  --color-surface-container-highest: #e4e2de;
+  --color-surface-container-lowest: #ffffff;
+  --color-on-surface-variant: #4e453d;
+  --color-outline-variant: #d1c4ba;
+  --color-primary-container: #867159;
+  --color-secondary-container: #eddec7;
+}
+
+@layer base {
+  body {
+    @apply bg-surface text-on-surface font-body selection:bg-primary/20;
+  }
+}
+
+.editorial-shadow {
+  box-shadow: 0 20px 40px rgba(27, 28, 26, 0.05);
+}
